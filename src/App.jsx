@@ -10,6 +10,7 @@ import {
   FaLinkedin,
   FaAt,
   FaGithub,
+  FaChevronRight
 } from "react-icons/fa";
 import { SiTailwindcss, SiGithub } from "react-icons/si";
 
@@ -51,19 +52,22 @@ function App() {
         {/* 首頁 */}
         <section
           id="home"
-          className="w-full mt-24  shadow-gray-500 py-18 bg-gradient-to-br from-indigo-300 via-purple-300 to-pink-300
- opacity-90 "
+          className="w-full h-lvh bg-cover bg-center bg-fixed flex justify-center relative  "
+          style={{
+            backgroundImage: "url('/public/images/background.jpeg')",
+          }}
         >
+          <div className="absolute inset-0 bg-black/50"></div>
           <div className="home-container max-w-[70%] md:flex-row flex flex-col justify-center items-center mx-auto">
-            <div className="slogan mr-10 text-center">
-              <h1 className="text-5xl font-bold">Hi I'm Amber.</h1>
+            <div className="relative z-10 slogan mr-10 text-center text-white">
+              <h1 className="text-5xl font-bold ">Hi I'm Amber.</h1>
               <p className="text-2xl mt-5">
                 Full-Stack Developer in Taiwan | React & JS
               </p>
             </div>
-            <div className="img-box bg-indigo-200 rounded-full min-w-20 max-w-70">
+            <div className="relative z-20 mg-box bg-white/50 rounded-full min-w-20 max-w-70">
               <img
-                src="/public/avatar.png"
+                src="/public/images/avatar.png"
                 alt="Avatar"
                 className="w-full  rounded-full"
                 title="Avatar"
@@ -72,10 +76,7 @@ function App() {
           </div>
         </section>
         {/* 關於我 */}
-        <section
-          id="about"
-          className="mx-auto w-full px-4  py-18 "
-        >
+        <section id="about" className="mx-auto w-full px-4  py-18 ">
           <h2 className="text-4xl md:text-5xl mb-10 text-center font-bold">
             About Me
           </h2>
@@ -83,14 +84,14 @@ function App() {
             I'm a{" "}
             <a
               href="https://zh.wikipedia.org/zh-tw/%E7%BC%85%E7%94%B8"
-              className="text-blue-600 "
+              className="text-blue-600 underline "
             >
               Burmese
             </a>{" "}
             web developer based in{" "}
             <a
               href="https://en.wikipedia.org/wiki/Taiwan"
-              className="text-blue-600"
+              className="text-blue-600 underline"
             >
               {" "}
               Taiwan
@@ -101,7 +102,10 @@ function App() {
             <br />
             After working for years in the university library and the Office of
             International Affairs at{" "}
-            <a href="https://new.ntpu.edu.tw/" className="text-blue-600">
+            <a
+              href="https://new.ntpu.edu.tw/"
+              className="text-blue-600 underline"
+            >
               {" "}
               National Taipei University
             </a>
@@ -110,7 +114,7 @@ function App() {
             code generators and to-do lists. I'm also working on a{" "}
             <a
               href="https://depart.moe.edu.tw/ed2500/News_Content.aspx?n=BEAF279005713C72&sms=8F992E081D3A9921&s=F4E7E58A8426B964#"
-              className="text-blue-600"
+              className="text-blue-600 underline"
             >
               Chinese language teaching certification
             </a>
@@ -127,14 +131,11 @@ function App() {
           </p>
         </section>
         {/* 技能 */}
-        <section
-          id="skills"
-          className="py-16 px-6 bg-gray-50 border-2 border-pink-600"
-        >
+        <section id="skills" className="py-16 px-6 bg-gray-200 ">
           <h2 className="text-4xl md:text-5xl p-2 mb-6 text-center font-bold">
             Skills
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 border-2 max-w-xl md:max-w-4xl mx-auto py-16">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-xl md:max-w-4xl mx-auto py-16">
             <div className="icons-card">
               <FaHtml5 className="icons-styles text-orange-500"></FaHtml5>
               <p className="icons-text-styles">HTML5</p>
@@ -178,100 +179,108 @@ function App() {
           </div>
         </section>
         {/* 作品 */}
-        <section
-          id="projects"
-          className="py-16 px-6 bg-gray-50 border-2 border-green-600"
-        >
-          <h2 className="text-4xl md:text-5xl p-2 mb-6 text-center font-bold">
+        <section id="projects" className="py-16 px-6">
+          <h2 className="text-4xl md:text-5xl pb-16 text-center font-bold">
             Projects
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 border-2 max-w-xl md:max-w-4xl mx-auto py-4 px-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-xl md:max-w-4xl mx-auto py-4 px-2">
             <div className="projects-card">
               <img
-                src="https://placehold.co/640x360?text=QR+Code+App"
-                alt="QR Code Project"
-                className="w-full h-48 object-cover rounded"
+                src="/public/images/weatherApp.png"
+                alt="Weather App Project"
+                className="projects-card-img "
               />
-              <a
-                href="#"
-                className="w-full flex items-center justify-center text-lg font-bold h-10 py-1 bg-gray-700 text-white rounded rounded-t-none"
-              >
-                QR Code Generator
-              </a>
+              <p className="pt-4 text-lg text-green-600">Weather App</p>
+              <div className="flex gap-6 py-4 items-center">
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://lixinjie520.github.io/1.WeatherApp/"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://github.com/lixinjie520/1.WeatherApp"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+              </div>
             </div>
             <div className="projects-card">
               <img
-                src="https://placehold.co/640x360?text=QR+Code+App"
-                alt="QR Code Project"
-                className="w-full h-48 object-cover rounded"
+                src="/public/images/QuoteGenerator.png"
+                alt="Random Quote Machine Project"
+                className="projects-card-img"
               />
-              <a
-                href="#"
-                className="w-full flex items-center justify-center text-lg font-bold h-10 py-1 bg-gray-700 text-white rounded rounded-t-none"
-              >
-                QR Code Generator
-              </a>
+              <p className="pt-4 text-lg text-green-600">
+                Random Quote Machine
+              </p>
+              <div className="flex gap-6 py-4 items-center">
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://lixinjie520.github.io/7.QuoteGenerator/"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://github.com/lixinjie520/7.QuoteGenerator"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+              </div>
             </div>
             <div className="projects-card">
               <img
-                src="https://placehold.co/640x360?text=QR+Code+App"
+                src="/public/images/QRCodeGenerator.png"
                 alt="QR Code Project"
-                className="w-full h-48 object-cover rounded"
+                className="projects-card-img"
               />
-              <a
-                href="#"
-                className="w-full flex items-center justify-center text-lg font-bold h-10 py-1 bg-gray-700 text-white rounded rounded-t-none"
-              >
-                QR Code Generator
-              </a>
-            </div>
-            <div className="projects-card">
-              <img
-                src="https://placehold.co/640x360?text=QR+Code+App"
-                alt="QR Code Project"
-                className="w-full h-48 object-cover rounded"
-              />
-              <a
-                href="#"
-                className="w-full flex items-center justify-center text-lg font-bold h-10 py-1 bg-gray-700 text-white rounded rounded-t-none"
-              >
-                QR Code Generator
-              </a>
-            </div>
-            <div className="projects-card">
-              <img
-                src="https://placehold.co/640x360?text=QR+Code+App"
-                alt="QR Code Project"
-                className="w-full h-48 object-cover rounded"
-              />
-              <a
-                href="#"
-                className="w-full flex items-center justify-center text-lg font-bold h-10 py-1 bg-gray-700 text-white rounded rounded-t-none"
-              >
-                QR Code Generator
-              </a>
-            </div>
-            <div className="projects-card">
-              <img
-                src="https://placehold.co/640x360?text=QR+Code+App"
-                alt="QR Code Project"
-                className="w-full h-48 object-cover rounded"
-              />
-              <a
-                href="#"
-                className="w-full flex items-center justify-center text-lg font-bold h-10 py-1 bg-gray-700 text-white rounded rounded-t-none"
-              >
-                QR Code Generator
-              </a>
+              <p className="pt-4 text-lg text-green-600">QR Code Generator</p>
+              <div className="flex gap-6 py-4 items-center">
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://lixinjie520.github.io/8.QRCodeGenerator/"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://github.com/lixinjie520/8.QRCodeGenerator"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
         {/* 聯繫方式 */}
-        <section
-          id="contact"
-          className="py-16 px-6 bg-gray-50 border-2 border-green-600"
-        >
-          <h2 className="text-4xl md:text-5xl p-2 mb-20 text-center font-bold">
+        <section id="contact" className="py-20 px-6 bg-gray-200">
+          <h2 className="text-4xl md:text-5xl pb-24 text-center font-bold">
             Let's work together...
           </h2>
           <div className="contact-link max-w-xl md:max-w-5xl mx-auto text-2xl font-bold grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center">
@@ -314,7 +323,7 @@ function App() {
           </div>
         </section>
         {/* 版權頁 */}
-        <footer className="py-10 flex justify-end text-xl px-4">
+        <footer className="py-10 flex justify-end text-sm font-semibold px-4">
           <p>Copyright© {year} Amber Wang. All rights reserved.</p>
         </footer>
       </div>

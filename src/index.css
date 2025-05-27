@@ -17,7 +17,7 @@
 
 @layer components{
     .icons-card{
-        @apply flex flex-col items-center hover:scale-105 transition-transform duration-200
+        @apply flex flex-col items-center hover:scale-105 transition-transform duration-200 
     }
 }
 
@@ -28,9 +28,20 @@
 
     @layer components{
         .projects-card{
-            @apply flex flex-col items-center min-w-40 shadow-lg hover:scale-102 overflow-hidden hover:shadow-2xl transition duration-200 cursor-pointer;
+            @apply flex flex-col items-center min-w-40 shadow-lg hover:scale-102 overflow-hidden hover:shadow-2xl transition duration-200 ;
         }
     }
+    @layer components{
+        .projects-card-title{
+            @apply w-full flex items-center justify-center text-lg font-bold h-14 py-1 rounded rounded-t-none;
+        }
+    }
+
+@layer components{
+    .projects-card-img{
+        @apply w-full h-48 object-cover rounded rounded-b-none shadow-md
+    }
+}
 
     @layer components{
         .link{
