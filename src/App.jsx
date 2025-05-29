@@ -186,7 +186,7 @@ function App() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-xl md:max-w-4xl mx-auto py-4 px-2">
             <div className="projects-card">
               <img
-                src="/public/images/weatherApp.png"
+                src="/images/weatherApp.png"
                 alt="Weather App Project"
                 className="projects-card-img "
               />
@@ -216,7 +216,7 @@ function App() {
             </div>
             <div className="projects-card">
               <img
-                src="/public/images/QuoteGenerator.png"
+                src="/images/QuoteGenerator.png"
                 alt="Random Quote Machine Project"
                 className="projects-card-img"
               />
@@ -248,7 +248,7 @@ function App() {
             </div>
             <div className="projects-card">
               <img
-                src="/public/images/QRCodeGenerator.png"
+                src="/images/QRCodeGenerator.png"
                 alt="QR Code Project"
                 className="projects-card-img"
               />
@@ -278,7 +278,7 @@ function App() {
             </div>
             <div className="projects-card">
               <img
-                src="/public/images/MusicPlayer.png"
+                src="/images/MusicPlayer.png"
                 alt="Music Player Project"
                 className="projects-card-img"
               />
@@ -308,7 +308,7 @@ function App() {
             </div>
             <div className="projects-card">
               <img
-                src="/public/images/Stopwatch.png"
+                src="/images/Stopwatch.png"
                 alt="Stopwatch Project"
                 className="projects-card-img"
               />
@@ -338,7 +338,7 @@ function App() {
             </div>
             <div className="projects-card">
               <img
-                src="/public/images/ToDoList.png"
+                src="/images/ToDoList.png"
                 alt="To Do List Project"
                 className="projects-card-img"
               />
@@ -367,6 +367,13 @@ function App() {
               </div>
             </div>
           </div>
+          <a
+            href="https://github.com/lixinjie520?tab=repositories" target="_blank"
+            className="flex items-center space-x-1 justify-center mt-10 w-32 h-12 rounded text-white text-2xl  mx-auto bg-gray-600 cursor-pointer hover:bg-blue-800 transition-colors duration-200"
+          >
+            <button className="pb-0.5 cursor-pointer">More</button>
+            <FaChevronRight className="text-[14px] leading-none" />
+          </a>
         </section>
         {/* 聯繫方式 */}
         <section id="contact" className="py-20 px-6 bg-gray-200">
