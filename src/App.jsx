@@ -276,6 +276,96 @@ function App() {
                 </div>
               </div>
             </div>
+            <div className="projects-card">
+              <img
+                src="/public/images/MusicPlayer.png"
+                alt="Music Player Project"
+                className="projects-card-img"
+              />
+              <p className="pt-4 text-lg text-green-600">Music Player</p>
+              <div className="flex gap-6 py-4 items-center">
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://lixinjie520.github.io/10.MusicPlayer/"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://github.com/lixinjie520/10.MusicPlayer"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+              </div>
+            </div>
+            <div className="projects-card">
+              <img
+                src="/public/images/Stopwatch.png"
+                alt="Stopwatch Project"
+                className="projects-card-img"
+              />
+              <p className="pt-4 text-lg text-green-600">Stopwatch</p>
+              <div className="flex gap-6 py-4 items-center">
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://lixinjie520.github.io/11.Stopwatch/"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://github.com/lixinjie520/11.Stopwatch"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+              </div>
+            </div>
+            <div className="projects-card">
+              <img
+                src="/public/images/ToDoList.png"
+                alt="To Do List Project"
+                className="projects-card-img"
+              />
+              <p className="pt-4 text-lg text-green-600">To Do List</p>
+              <div className="flex gap-6 py-4 items-center">
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://lixinjie520.github.io/2.ToDoList/"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    Live Demo
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+                <div className="flex items-center hover:text-green-700 space-x-1 font-semibold">
+                  <a
+                    href="https://github.com/lixinjie520/2.ToDoList"
+                    className="inline-block pb-0.5"
+                    target="_blank"
+                  >
+                    View Code
+                  </a>
+                  <FaChevronRight className="text-[11px] leading-none" />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         {/* 聯繫方式 */}
