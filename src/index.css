@@ -54,3 +54,9 @@
             @apply border-b-2 border-transparent hover:border-b-blue-600 hover:text-blue-600 transition-all duration-300 ease-in-out;
         }
     }
+
+    @layer components{
+        .mobile-menu{
+            @apply hover:bg-amber-800 w-full h-6 flex justify-center items-center leading-6 
+        }
+    }
