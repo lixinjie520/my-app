@@ -9,7 +9,7 @@ const Home = () => {
         backgroundImage: "url('/public/images/background.jpeg')",
       }}
     >
-      <div className="absolute inset-0 bg-black/50"></div>
+      <div className="absolute inset-0 bg-black/50 dark:bg-black/70"></div>
       <div className="home-container max-w-[70%] md:flex-row flex flex-col mt-4 justify-center items-center mx-auto">
         <div className="relative z-10 slogan text-center text-white">
           <h1 className="text-5xl font-bold ">Hi I'm Amber.</h1>

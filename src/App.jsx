@@ -14,19 +14,19 @@ function App() {
     <>
       <div className="w-full mx-auto">
         {/* 導航欄 */}
-        <Header/>
+        <Header />
         {/* 首頁 */}
-        <Home/>
+        <Home />
         {/* 關於我 */}
-        <About/>
+        <About />
         {/* 技能 */}
-        <Skills/>
+        <Skills />
         {/* 作品 */}
-        <Projects/>
+        <Projects />
         {/* 聯繫方式 */}
-        <Contact/>
+        <Contact />
         {/* 版權頁 */}
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

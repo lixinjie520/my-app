@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
-
+@layer utilities {
+    .font-poppins {
+        font-family: 'Poppins', sans-serif;
+    }
+}
 @layer components{
     .icons-styles{
         @apply w-14 h-14 mb-2
@@ -11,7 +16,7 @@
 
 @layer components{
     .icons-text-styles {
-            @apply text-lg font-medium text-indigo-700
+            @apply text-lg font-medium text-indigo-700 dark:text-white
         }
 }
 
@@ -21,14 +26,9 @@
     }
 }
 
-@layer utilities{
-    .font-poppins{
-        font-family:'Poppins',sans-serif;
-    } }
-
     @layer components{
         .projects-card{
-            @apply flex flex-col items-center min-w-40 shadow-lg hover:scale-102 overflow-hidden hover:shadow-2xl transition duration-200 ;
+            @apply flex flex-col items-center min-w-40 shadow-lg hover:scale-102 overflow-hidden hover:shadow-2xl transition duration-200 dark:bg-gray-100 dark:rounded-md
         }
     }
     @layer components{
@@ -57,6 +57,6 @@
 
     @layer components{
         .mobile-menu{
-            @apply hover:bg-amber-800 w-full h-6 flex justify-center items-center leading-6 
+            @apply hover:bg-amber-800 w-full h-6 flex justify-center items-center leading-6 py-0.5
         }
     }

@@ -4,8 +4,8 @@ import {
 } from "react-icons/fa";
 const Projects = () => {
   return (
-    <section id="projects" className="py-16 px-6">
-      <h2 className="text-4xl md:text-5xl pb-16 text-center font-bold">
+    <section id="projects" className="py-16 px-6 dark:bg-gray-800">
+      <h2 className="text-4xl md:text-5xl pb-16 text-center font-bold dark:text-white">
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-xl md:max-w-4xl mx-auto py-4 px-2">

@@ -10,8 +10,8 @@ import { SiTailwindcss, SiGithub } from "react-icons/si";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16 px-6 bg-gray-200 ">
-      <h2 className="text-4xl md:text-5xl p-2 mb-6 text-center font-bold">
+    <section id="skills" className="py-16 px-6 bg-gray-200 dark:bg-gray-700 dark:text-white">
+      <h2 className="text-4xl md:text-5xl p-2 mb-6 text-center font-bold ">
         Skills
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-xl md:max-w-4xl mx-auto py-16">

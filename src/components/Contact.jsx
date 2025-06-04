@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-6 bg-gray-200">
+    <section id="contact" className="py-20 px-6 bg-gray-200 dark:bg-gray-700 dark:text-white">
       <h2 className="text-4xl md:text-5xl pb-24 text-center font-bold">
         Let's work together...
       </h2>
