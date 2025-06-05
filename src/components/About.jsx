@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
   return (
@@ -55,6 +56,16 @@ const About = () => {
         I value empathy, clear thinking, and building solutions that help
         people—not just with code, but also with understanding and support.
       </p>
+      <div className="mx-auto w-56 border flex justify-center items-center py-2 mt-10 rounded-md  bg-gray-600 text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out dark:border-gray-500 ">
+        <a
+          href="/public/assets/AmberWang_Resume.pdf"
+          download="AmberWang_Resume.pdf"
+          className="font-semibold"
+        >
+          <FaDownload className="inline-block mr-2"></FaDownload>
+          Download Resume
+        </a>
+      </div>
     </section>
   );
 }
