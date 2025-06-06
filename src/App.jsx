@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,6 +14,7 @@ function App() {
   return (
     <>
       <div className="w-full mx-auto">
+        <Toaster/>
         {/* 導航欄 */}
         <Header />
         {/* 首頁 */}

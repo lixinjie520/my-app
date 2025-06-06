@@ -45,7 +45,7 @@
 
     @layer components{
         .link{
-            @apply mr-10 flex items-center hover:translate-y-2 duration-300
+            @apply flex items-center hover:translate-y-2 duration-300
         }
     }
 
