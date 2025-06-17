@@ -22,6 +22,12 @@ const ContactForm = () => {
         formData
       );
       alert(res.data.message);
+
+      setFormData({
+        name: "",
+        email: "",
+        message: "",
+      });
     } catch (error) {
       console.error("送出失敗", error);
       alert("發生錯誤，請稍後再試，謝謝。");
@@ -34,6 +40,7 @@ const ContactForm = () => {
         type="text"
         name="name"
         onChange={handleChange}
+        value={formData.name}
         placeholder="Name"
         className="border px-2 py-1 text-sm h-10 "
         required
@@ -42,6 +49,7 @@ const ContactForm = () => {
         type="email"
         name="email"
         onChange={handleChange}
+        value={formData.email}
         placeholder="Email"
         className="border px-2 py-1 text-sm h-10"
         required
@@ -50,6 +58,7 @@ const ContactForm = () => {
         placeholder="Message"
         name="message"
         onChange={handleChange}
+        value={formData.message}
         className="border p-2 text-sm"
         rows="5"
         maxLength="200"
