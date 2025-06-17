@@ -1,4 +1,4 @@
 # Amber.dev
 
-This is Amber.
+## This is Amber.
 Welcome to my portfolio website.

@@ -30,7 +30,7 @@ const ContactForm = () => {
       });
     } catch (error) {
       console.error("送出失敗", error);
-      alert("發生錯誤，請稍後再試，謝謝。");
+      alert("留言發送失敗，請稍後再試。");
     }
   };
   return (
