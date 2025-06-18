@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className="w-full mx-auto">
-        <Toaster/>
+        <Toaster position="top-center" toastOptions={{duration:3000}}/>
         {/* 導航欄 */}
         <Header />
         {/* 首頁 */}

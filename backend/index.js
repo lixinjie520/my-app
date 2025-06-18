@@ -9,12 +9,11 @@ const app = express();
 app.use(express.json());
 app.use(cors())
 
-console.log("API KEY:", process.env.SENDGRID_API_KEY?.slice(0, 10), "TO:", process.env.SENDGRID_TO);
 // 設定 SendGrid API 金鑰
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 app.post("/api/message", async (req, res) => {
-    console.log("收到前端資料：", req.body);
+    console.log("收到前端資料：", req);
     const { name, email, message } = req.body;
     console.log("留言成功", name, email, message);
 
@@ -22,7 +21,7 @@ app.post("/api/message", async (req, res) => {
         to: process.env.SENDGRID_TO,
         from: process.env.SENDGRID_TO,
         subject: "個人網站留言",
-        text: `姓名:${name}\nEmail:${email}\n留言內容:${message}`
+        text: `您好，您有一封來自個人網站的留言：\n姓名:${name}\nEmail:${email}\n留言內容:${message}`
         
     };
 

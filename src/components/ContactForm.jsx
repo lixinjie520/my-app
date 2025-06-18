@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { toast } from "react-hot-toast";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -21,16 +22,24 @@ const ContactForm = () => {
         "http://localhost:3000/api/message",
         formData
       );
-      alert(res.data.message);
+      // alert(res.data.message);
 
       setFormData({
         name: "",
         email: "",
         message: "",
       });
+      toast.success(res.data.message)
     } catch (error) {
       console.error("送出失敗", error);
-      alert("留言發送失敗，請稍後再試。");
+      // alert("留言發送失敗，請稍後再試。");
+      toast.error(
+        error.response?.data?.message ||
+          `錯誤代碼：${error.response?.status || "未知"}，請稍後再試`
+      );
+      // 404：API 路徑錯誤
+      // 500: 後端錯誤
+      // 400：請求格式錯誤
     }
   };
   return (
