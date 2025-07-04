@@ -1,7 +1,11 @@
 import React from 'react'
 import { FaDownload } from 'react-icons/fa';
+import { toast } from "react-hot-toast";
 
 const About = () => {
+  const handleClick = () => {
+    toast.success("履歷已開始下載")
+  }
   return (
     <section
       id="about"
@@ -11,7 +15,7 @@ const About = () => {
         About Me
       </h2>
       <p className="text-base md:text-lg max-w-xl md:max-w-3xl mx-auto text-left leading-relaxed tracking-wide mb-6 dark:text-gray-200">
-        I'm a{" "}
+        Hi, I'm Amber.I'm a{" "}
         <a
           href="https://zh.wikipedia.org/zh-tw/%E7%BC%85%E7%94%B8"
           className="text-blue-600 underline "
@@ -56,11 +60,12 @@ const About = () => {
         I value empathy, clear thinking, and building solutions that help
         people—not just with code, but also with understanding and support.
       </p>
-      <div className="mx-auto w-56 border flex justify-center items-center py-2 mt-10 rounded-md  bg-gray-600 text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out dark:border-gray-500 ">
+      <div className="mx-auto w-56 border flex justify-center items-center py-2 mt-10 rounded-md  bg-gray-600 text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out dark:border-gray-500 "
+      onClick={handleClick}>
         <a
           href="/public/assets/AmberWang_Resume.pdf"
           download="AmberWang_Resume.pdf"
-          className="font-semibold"
+          className="font-semibold w-[100%] text-center"
         >
           <FaDownload className="inline-block mr-2"></FaDownload>
           Download Resume

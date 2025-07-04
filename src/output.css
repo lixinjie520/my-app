@@ -315,6 +315,9 @@
   .w-56 {
     width: calc(var(--spacing) * 56);
   }
+  .w-\[100\%\] {
+    width: 100%;
+  }
   .w-\[350px\] {
     width: 350px;
   }

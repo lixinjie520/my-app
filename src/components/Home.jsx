@@ -19,7 +19,7 @@ const Home = () => {
         </div>
         <div className="relative z-20 mg-box bg-white/50 rounded-full min-w-20 max-w-70">
           <img
-            src="/public/images/avatar.png"
+            src="/images/avatar.png"
             alt="Avatar"
             className="w-full  rounded-full"
             title="Avatar"
