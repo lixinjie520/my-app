@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-xl md:max-w-4xl mx-auto py-4 px-2">
         <div className="projects-card">
           <img
-            src="/images/weatherApp.png"
+            src={`${import.meta.env.BASE_URL}/images/weatherApp.png`} 
             alt="Weather App Project"
             className="projects-card-img "
           />
@@ -41,7 +41,7 @@ const Projects = () => {
         </div>
         <div className="projects-card">
           <img
-            src="/images/QuoteGenerator.png"
+            src={`${import.meta.env.BASE_URL}/images/QuoteGenerator.png`}
             alt="Random Quote Machine Project"
             className="projects-card-img"
           />
@@ -71,7 +71,7 @@ const Projects = () => {
         </div>
         <div className="projects-card">
           <img
-            src="/images/QRCodeGenerator.png"
+            src={`${import.meta.env.BASE_URL}/images/QRCodeGenerator.png`}
             alt="QR Code Project"
             className="projects-card-img"
           />
@@ -101,7 +101,7 @@ const Projects = () => {
         </div>
         <div className="projects-card">
           <img
-            src="/images/MusicPlayer.png"
+            src={`${import.meta.env.BASE_URL}/images/MusicPlayer.png`}
             alt="Music Player Project"
             className="projects-card-img"
           />
@@ -131,7 +131,7 @@ const Projects = () => {
         </div>
         <div className="projects-card">
           <img
-            src="/images/Stopwatch.png"
+            src={`${import.meta.env.BASE_URL}/images/Stopwatch.png`}
             alt="Stopwatch Project"
             className="projects-card-img"
           />
@@ -161,7 +161,7 @@ const Projects = () => {
         </div>
         <div className="projects-card">
           <img
-            src="/images/ToDoList.png"
+            src={`${import.meta.env.BASE_URL}/images/ToDoList.png`}
             alt="To Do List Project"
             className="projects-card-img"
           />
