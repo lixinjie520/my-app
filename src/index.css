@@ -22,7 +22,7 @@
 
 @layer components{
     .icons-card{
-        @apply flex flex-col items-center hover:scale-105 transition-transform duration-200 
+        @apply flex flex-col items-center hover:scale-105 transition-transform duration-500 
     }
 }
 
