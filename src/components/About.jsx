@@ -1,11 +1,11 @@
-import React from 'react'
-import { FaDownload } from 'react-icons/fa';
+import React from "react";
+import { FaDownload } from "react-icons/fa";
 import { toast } from "react-hot-toast";
 
 const About = () => {
   const handleClick = () => {
-    toast.success("履歷已開始下載")
-  }
+    toast.success("履歷已開始下載");
+  };
   return (
     <section
       id="about"
@@ -15,14 +15,14 @@ const About = () => {
         About Me
       </h2>
       <p className="text-base md:text-lg max-w-xl md:max-w-3xl mx-auto text-left leading-relaxed tracking-wide mb-6 dark:text-gray-200">
-        Hi, I'm Amber.I'm a{" "}
+        Hi, I'm Amber. I'm a{" "}
         <a
           href="https://zh.wikipedia.org/zh-tw/%E7%BC%85%E7%94%B8"
           className="text-blue-600 underline "
         >
           Burmese
         </a>{" "}
-        web developer based in{" "}
+        web developer learner based in{" "}
         <a
           href="https://en.wikipedia.org/wiki/Taiwan"
           className="text-blue-600 underline"
@@ -30,26 +30,28 @@ const About = () => {
           {" "}
           Taiwan
         </a>{" "}
-        with a background in Chinese Literature and a passion for front-end and
-        full-stack web development.
+        , with a background in Chinese Literature and a passion for full-stack
+        web development.
         <br />
         <br />
-        After working for years in the university library and the Office of
-        International Affairs at{" "}
+        After working for years in the Office of International Affairs at{" "}
         <a href="https://new.ntpu.edu.tw/" className="text-blue-600 underline">
           {" "}
           National Taipei University
         </a>
-        .I’m now shifting my career toward tech. I specialize in React and
-        JavaScript, and enjoy building small but functional apps like QR code
-        generators and to-do lists. I'm also working on a{" "}
+        . I am now transitioning my career toward the tech industry. I
+        specialize in HTML, CSS, and JavaScript, and I’m currently learning Java
+        Spring Boot.
+        <br />
+        <br />I also hold a certification in{" "}
         <a
           href="https://depart.moe.edu.tw/ed2500/News_Content.aspx?n=BEAF279005713C72&sms=8F992E081D3A9921&s=F4E7E58A8426B964#"
           className="text-blue-600 underline"
+          target="_blank"
         >
-          Chinese language teaching certification
+          Teaching Chinese as a Foreign Language
         </a>
-        .
+        &nbsp;and have achieved a TOEIC score of 940.
         <br />
         <br />
         <strong>
@@ -60,10 +62,12 @@ const About = () => {
         I value empathy, clear thinking, and building solutions that help
         people—not just with code, but also with understanding and support.
       </p>
-      <div className="mx-auto w-56 border flex justify-center items-center py-2 mt-10 rounded-md  bg-gray-600 text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out dark:border-gray-500 "
-      onClick={handleClick}>
+      <div
+        className="mx-auto w-56 border flex justify-center items-center py-2 mt-10 rounded-md  bg-gray-600 text-white hover:bg-gray-800 transition-colors duration-200 ease-in-out dark:border-gray-500 "
+        onClick={handleClick}
+      >
         <a
-          href="/public/assets/AmberWang_Resume.pdf"
+          href={`${import.meta.env.BASE_URL}assets/AmberWang_Resume.pdf`}
           download="AmberWang_Resume.pdf"
           className="font-semibold w-[100%] text-center"
         >
@@ -73,6 +77,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
-export default About
+export default About;
