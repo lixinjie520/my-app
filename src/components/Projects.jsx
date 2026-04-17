@@ -1,17 +1,45 @@
-import React from 'react'
-import {
-  FaChevronRight,
-} from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
+import ProjectCard from "./ProjectCard";
+
 const Projects = () => {
+  const imagesUrl = `${import.meta.env.BASE_URL}images/`;
+  const demoLink = "https://lixinjie520.github.io/";
+  const codeLink = "https://github.com/lixinjie520/";
+
+  const projects = [
+    {
+      imgSrc: `${imagesUrl}weatherApp.png`,
+      alt: "React Weather App Project",
+      projectName: "React Weather App",
+      name: "React-weather-app",
+    },
+    {
+      imgSrc: `${imagesUrl}ToDoList.png`,
+      alt: "To Do List Project",
+      projectName: "To Do List App",
+      name: "2.ToDoList",
+    },
+  ];
+
   return (
     <section id="projects" className="py-16 px-6 dark:bg-gray-800">
       <h2 className="text-4xl md:text-5xl pb-16 text-center font-bold dark:text-white">
         Projects
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-xl md:max-w-4xl mx-auto py-4 px-2">
-        <div className="projects-card">
+        {projects.map((p, index) => (
+          <ProjectCard
+            key={index}
+            imgSrc={p.imgSrc}
+            alt={p.alt}
+            projectName={p.projectName}
+            demoLink={`${demoLink}${p.name}/`}
+            codeLink={`${codeLink}${p.name}/`}
+          />
+        ))}
+        {/* <div className="projects-card">
           <img
-            src={`${import.meta.env.BASE_URL}/images/weatherApp.png`} 
+            src={`${import.meta.env.BASE_URL}/images/weatherApp.png`}
             alt="Weather App Project"
             className="projects-card-img "
           />
@@ -188,7 +216,7 @@ const Projects = () => {
               <FaChevronRight className="text-[11px] leading-none" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <a
         href="https://github.com/lixinjie520?tab=repositories"
@@ -200,6 +228,6 @@ const Projects = () => {
       </a>
     </section>
   );
-}
+};
 
-export default Projects
+export default Projects;
