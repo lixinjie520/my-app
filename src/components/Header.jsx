@@ -33,7 +33,7 @@ const Header = () => {
         </p>
         <p className="ml-1 font-mono font-bold text-lg">Amber.dev</p>
       </div>
-      <nav className="text-2xl relative flex">
+      <nav className="text-xl relative flex">
         {/* Desktop Menu */}
         <button className="pr-3 text-xl cursor-pointer" onClick={toggleTheme}>
           {isDarkMode ? <FaSun></FaSun> : <FaMoon></FaMoon>}

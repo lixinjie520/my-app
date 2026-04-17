@@ -14,14 +14,14 @@ const Home = () => {
         <div className="relative z-10 slogan text-center text-white">
           <h1 className="text-5xl font-bold ">Hi I'm Amber.</h1>
           <p className="text-2xl mt-5">
-            Full-Stack Developer in Taiwan | React & JS
+            Aspiring Full-Stack Engineer | React & Java Spring Boot
           </p>
         </div>
         <div className="relative z-20 mg-box bg-white/50 rounded-full min-w-20 max-w-70">
           <img
             src={`${import.meta.env.BASE_URL}images/avatar.png`}
             alt="Avatar"
-            className="w-full  rounded-full"
+            className="w-full rounded-full"
             title="Avatar"
           />
         </div>
