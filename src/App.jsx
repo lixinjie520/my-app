@@ -12,17 +12,17 @@ function App() {
   return (
     <>
       <div className="w-full mx-auto">
-        <Toaster position="top-center" toastOptions={{duration:3000}}/>
+        <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
         {/* 導航欄 */}
         <Header />
         {/* 首頁 */}
         <Home />
-        {/* 關於我 */}
-        <About />
-        {/* 技能 */}
-        <Skills />
         {/* 作品 */}
         <Projects />
+        {/* 技能 */}
+        <Skills />
+        {/* 關於我 */}
+        <About />
         {/* 聯繫方式 */}
         <Contact />
         {/* 版權頁 */}
