@@ -16,8 +16,32 @@ const Projects = () => {
     {
       imgSrc: `${imagesUrl}ToDoList.png`,
       alt: "To Do List Project",
-      projectName: "To Do List App",
+      projectName: "To Do List",
       name: "2.ToDoList",
+    },
+    {
+      imgSrc: `${imagesUrl}QuoteGenerator.png`,
+      alt: "Quote Generator Project",
+      projectName: "Quote Generator",
+      name: "7.QuoteGenerator",
+    },
+    {
+      imgSrc: `${imagesUrl}QRCodeGenerator.png`,
+      alt: "QRCode Generator Project",
+      projectName: "QRCode Generator",
+      name: "8.QRCodeGenerator",
+    },
+    {
+      imgSrc: `${imagesUrl}MusicPlayer.png`,
+      alt: "Music Player Project",
+      projectName: "Music Player",
+      name: "10.MusicPlayer",
+    },
+    {
+      imgSrc: `${imagesUrl}Stopwatch.png`,
+      alt: "Stopwatch Project",
+      projectName: "Stopwatch",
+      name: "11.Stopwatch",
     },
   ];
 
