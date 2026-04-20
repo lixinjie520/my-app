@@ -49,7 +49,7 @@ const Header = () => {
             <a href="#skills">SKILLS</a>
           </li>
           <li className="nav-hover">
-            <a href="#about">ABOUT ME</a>
+            <a href="#about">ABOUT</a>
           </li>
           <li className="nav-hover">
             <a href="#contact">CONTACT</a>

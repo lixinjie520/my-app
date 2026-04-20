@@ -12,7 +12,7 @@ const About = () => {
       className="mx-auto w-full px-4  py-18 dark:bg-gray-800  "
     >
       <h2 className="text-4xl md:text-5xl mb-10 text-center font-bold dark:text-white ">
-        About Me
+        About
       </h2>
       <p className="text-base md:text-lg max-w-xl md:max-w-3xl mx-auto text-left leading-relaxed tracking-wide mb-6 dark:text-gray-200">
         Hi, I'm Amber. I'm a{" "}
