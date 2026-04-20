@@ -68,13 +68,13 @@ const Header = () => {
               <a href="#home">HOME</a>
             </li>
             <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#about">ABOUT ME</a>
+              <a href="#projects">PROJECTS</a>
             </li>
             <li className="mobile-menu" onClick={handleLinkClick}>
               <a href="#skills">SKILLS</a>
             </li>
             <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#projects">PROJECTS</a>
+              <a href="#about">ABOUT</a>
             </li>
             <li className="mobile-menu" onClick={handleLinkClick}>
               <a href="#contact">CONTACT</a>
