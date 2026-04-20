@@ -64,7 +64,7 @@ const Header = () => {
         </div>
         {/* Mobile Menu */}
         {isOpen && (
-          <ul className="flex flex-col items-center text-sm font-normal p-2 bg-amber-950 text-white absolute top-14  right-0 w-32 md:hidden ">
+          <ul className="flex flex-col items-center text-lg font-normal py-2 bg-amber-950 text-white absolute top-14  right-0 w-32 md:hidden ">
             {navItems.map((item, index) => (
               <li key={index} className="mobile-menu" onClick={handleLinkClick}>
                 <a href={item.href}> {item.name} </a>
