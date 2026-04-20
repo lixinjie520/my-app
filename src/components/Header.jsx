@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { FaBars,FaMoon,FaSun } from 'react-icons/fa';
 const Header = () => {
+
+  const navItems = [
+    { name: "HOME", href: "#home" },
+    { name: "PROJECTS", href: "#projects" },
+    { name: "SKILLS", href: "#skills" },
+    { name: "ABOUT", href: "#about" },
+    { name: "CONTACT", href: "#contact" },
+  ];
+
   const [isOpen, setIsOpen] = useState(false);
   const handleClick = () => {
     setIsOpen(!isOpen)
@@ -38,23 +47,15 @@ const Header = () => {
         <button className="pr-3 text-xl cursor-pointer" onClick={toggleTheme}>
           {isDarkMode ? <FaSun></FaSun> : <FaMoon></FaMoon>}
         </button>
+        {/* Desktop Menu */}
         <ul className="md:flex gap-4 hidden ">
-          <li className="nav-hover">
-            <a href="#home">HOME</a>
-          </li>
-          <li className="nav-hover">
-            <a href="#projects">PROJECTS</a>
-          </li>
-          <li className="nav-hover">
-            <a href="#skills">SKILLS</a>
-          </li>
-          <li className="nav-hover">
-            <a href="#about">ABOUT</a>
-          </li>
-          <li className="nav-hover">
-            <a href="#contact">CONTACT</a>
-          </li>
+          {navItems.map((item, index) => (
+            <li key={index} className="nav-hover">
+              <a href={item.href}>{item.name}</a>
+            </li>
+          ))}
         </ul>
+
         {/* Bars Icon - mobile only */}
         <div className="text-end pr-4 md:hidden pt-1.5">
           <button onClick={handleClick}>
@@ -64,21 +65,11 @@ const Header = () => {
         {/* Mobile Menu */}
         {isOpen && (
           <ul className="flex flex-col items-center text-sm font-normal p-2 bg-amber-950 text-white absolute top-14  right-0 w-32 md:hidden ">
-            <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#home">HOME</a>
-            </li>
-            <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#projects">PROJECTS</a>
-            </li>
-            <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#skills">SKILLS</a>
-            </li>
-            <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#about">ABOUT</a>
-            </li>
-            <li className="mobile-menu" onClick={handleLinkClick}>
-              <a href="#contact">CONTACT</a>
-            </li>
+            {navItems.map((item, index) => (
+              <li key={index} className="mobile-menu" onClick={handleLinkClick}>
+                <a href={item.href}> {item.name} </a>
+              </li>
+            ))}
           </ul>
         )}
       </nav>
