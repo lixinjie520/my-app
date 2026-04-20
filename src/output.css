@@ -820,8 +820,8 @@
     transition-property: transform, translate, scale, rotate;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
-    --tw-duration: 200ms;
-    transition-duration: 200ms;
+    --tw-duration: 500ms;
+    transition-duration: 500ms;
     &:hover {
       @media (hover: hover) {
         --tw-scale-x: 105%;
@@ -937,14 +937,19 @@
 }
 @layer components {
   .mobile-menu {
+    margin-inline: calc(var(--spacing) * 2.5);
     display: flex;
-    height: calc(var(--spacing) * 6);
+    height: calc(var(--spacing) * 9);
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding-block: calc(var(--spacing) * 0.5);
     --tw-leading: calc(var(--spacing) * 6);
     line-height: calc(var(--spacing) * 6);
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+      }
+    }
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-amber-800);
