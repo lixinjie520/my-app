@@ -25,6 +25,11 @@ const Home = () => {
             title="Avatar"
           />
         </div>
+        <div className="absolute top-120 left-50 z-20 text-center text-white">
+          <a href='#projects' className="flex w-44 h-10 items-center justify-center border-2 cursor-pointer text-lg mt-5">
+            VIEW MY WORK
+          </a>
+        </div>
       </div>
     </section>
   );
