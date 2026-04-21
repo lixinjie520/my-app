@@ -35,8 +35,8 @@ const Header = () => {
     setIsDarkMode((prev)=>!prev)
   }
   return (
-    <header className="flex w-full h-18 mx-auto justify-between items-center font-semibold  py-4 fixed top-0 left-0 right-0 z-50 bg-white shadow shadow-gray-400 dark:bg-gray-900 dark:text-white dark:shadow-gray-800">
-      <div className="logo-box flex justify-start ml-20 text-2xl bg-white cursor-pointer dark:bg-gray-900 dark:text-white">
+    <header className="flex w-full h-18 mx-auto justify-between items-center font-semibold  py-4 fixed top-0 left-0 right-0 z-50 bg-white shadow shadow-gray-400 dark:bg-gray-700 dark:text-white dark:shadow-gray-800">
+      <div className="logo-box flex justify-start ml-20 text-2xl bg-white cursor-pointer dark:bg-gray-700 dark:text-white">
         <p className="w-8 bg-gradient-to-r from-amber-700 via-amber-500 to-amber-700 rounded flex justify-center font-thin text-lg text-white items-center">
           &lt;/&gt;
         </p>
