@@ -1,11 +1,6 @@
-import React from 'react';
-import ContactForm from './ContactForm';
-import {
-  FaFacebook,
-  FaLinkedin,
-  FaAt,
-  FaGithub,
-} from "react-icons/fa";
+import React from "react";
+import ContactForm from "../components/ContactForm";
+import { FaFacebook, FaLinkedin, FaAt, FaGithub } from "react-icons/fa";
 const Contact = () => {
   return (
     <section
@@ -15,9 +10,9 @@ const Contact = () => {
       <h2 className="text-4xl md:text-5xl pb-24 text-center font-bold">
         Let's work together...
       </h2>
-      <div className='grid grid-cols-1 lg:grid-cols-2 px-30 place-items-center'>
+      <div className="grid grid-cols-1 lg:grid-cols-2 px-30 place-items-center">
         {/* 左邊聯繫表單 */}
-       <ContactForm/>
+        <ContactForm />
         {/* 右邊聯繫區 */}
         <div className="max-w-3xl md:max-w-5xl md:mt-10  mx-auto text-2xl font-bold grid grid-cols-1 gap-14 mt-10 place-items-center rounded">
           <div className="contact-card">
@@ -60,6 +55,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

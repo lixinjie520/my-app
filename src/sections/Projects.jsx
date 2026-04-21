@@ -1,5 +1,5 @@
 import { FaChevronRight } from "react-icons/fa";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 const Projects = () => {
   const imagesUrl = `${import.meta.env.BASE_URL}images/`;

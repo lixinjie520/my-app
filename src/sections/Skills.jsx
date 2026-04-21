@@ -7,10 +7,9 @@ import {
   FaNodeJs,
 } from "react-icons/fa";
 import { SiTailwindcss, SiGithub } from "react-icons/si";
-import SkillCard from "./SkillCard";
+import SkillCard from "../components/SkillCard";
 
 const Skills = () => {
-
   const skills = [
     { icon: FaHtml5, color: "text-orange-500", name: "HTML5" },
     { icon: FaCss3Alt, color: "text-blue-500", name: "CSS3" },
@@ -31,11 +30,14 @@ const Skills = () => {
         Skills
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-xl md:max-w-4xl mx-auto py-16">
-        {
-          skills.map((skill, index) => (
-            <SkillCard key={index} icon={skill.icon} color={skill.color} name={skill.name} />
-          ))
-        }
+        {skills.map((skill, index) => (
+          <SkillCard
+            key={index}
+            icon={skill.icon}
+            color={skill.color}
+            name={skill.name}
+          />
+        ))}
         {/* <SkillCard icon={FaHtml5} color="text-orange-500" name="HTML5" />
         <SkillCard icon={FaCss3Alt} color="text-blue-500" name="CSS3" />
         <SkillCard icon={FaJs} color="text-yellow-300" name="JavaScript" />
