@@ -1,7 +1,6 @@
 import Header from "./components/Header";
 import Home from "./sections/Home";
 import About from "./sections/About";
-import Skills from "./sections/Skills";
 import Projects from "./sections/Projects";
 import Contact from "./sections/Contact";
 import Footer from "./components/Footer";
@@ -18,8 +17,7 @@ function App() {
         <Home />
         {/* 作品 */}
         <Projects />
-        {/* 技能 */}
-        <Skills />
+
         {/* 關於我 */}
         <About />
         {/* 聯繫方式 */}

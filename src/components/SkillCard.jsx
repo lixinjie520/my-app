@@ -1,8 +1,10 @@
 const SkillCard = ({icon: Icon, color, name}) => {
   return (
-    <div className="icons-card">
+    <div className="flex flex-col items-center hover:scale-105 transition-transform duration-500">
       <Icon className={`icons-styles ${color} `}></Icon>
-          <p className="icons-text-styles">{ name }</p>
+      <p className="text-lg font-medium text-indigo-700 dark:text-white">
+        {name}
+      </p>
     </div>
   );
 };
