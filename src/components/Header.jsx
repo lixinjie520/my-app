@@ -44,7 +44,7 @@ const Header = () => {
       </div>
       <nav className="text-xl relative flex">
         {/* Desktop Menu */}
-        <button className="pr-3 text-xl cursor-pointer focus:outline-none" onClick={toggleTheme}>
+        <button className="pr-3 text-lg cursor-pointer focus:outline-none" onClick={toggleTheme}>
           {isDarkMode ? <FaSun></FaSun> : <FaMoon></FaMoon>}
         </button>
         {/* Desktop Menu */}
