@@ -19,7 +19,7 @@ const Contact = () => {
       </h2>
 
       <div className="flex px-30 items-center">
-        <div className="flex gap-20 max-w-full md:max-w-5xl mt-4 md:mt-6 mx-auto text-lg md:text-2xl font-bold rounded">
+        <div className="flex gap-20 mx-auto max-w-full md:max-w-5xl mt-4 md:mt-6  text-lg md:text-2xl font-semibold md:font-bold justify-center rounded">
           {contactInfo.map((con, index) => {
             const Icon = con.icon;
             return (
@@ -34,42 +34,6 @@ const Contact = () => {
                 </a>
               </div>
             ) })}
-          {/* <div className="contact-card">
-            <a
-              href="https://www.facebook.com/shengyan.wang1"
-              target="_blank"
-              className="link"
-            >
-              <FaFacebook className="mr-1"></FaFacebook>
-              Facebook
-            </a>
-          </div> */}
-          {/* <div className="flex gap-4">
-            <a
-              href="https://github.com/lixinjie520"
-              target="_blank"
-              className="flex items-center"
-            >
-              <FaGithub className="mr-1"></FaGithub>
-              Github
-            </a>
-          </div>
-          <div className="flex gap-4">
-            <a
-              href="https://www.linkedin.com/in/%E5%8B%9D%E7%87%95-%E7%8E%8B-61b6b3286/"
-              target="_blank"
-              className="flex items-center"
-            >
-              <FaLinkedin className="mr-1"></FaLinkedin>
-              LinkedIn
-            </a>
-          </div> */}
-          {/* <div className="contact-card ">
-            <a href="mailto:wangshengyan6@gmail.com" className="link">
-              <FaAt className="mr-1"></FaAt>
-              Send a mail
-            </a>
-          </div> */}
         </div>
       </div>
     </section>
