@@ -9,7 +9,7 @@
 }
 @layer components{
     .icons-styles{
-        @apply w-14 h-14 mb-2
+        @apply w-10 h-10 mb-2
     }
     
 }

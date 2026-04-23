@@ -1,5 +1,4 @@
 import React from "react";
-import ContactForm from "../components/ContactForm";
 import { FaFacebook, FaLinkedin, FaAt, FaGithub } from "react-icons/fa";
 const Contact = () => {
   const contactInfo = [
